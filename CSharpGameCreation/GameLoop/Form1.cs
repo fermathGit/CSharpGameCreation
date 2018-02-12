@@ -8,22 +8,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tao.OpenGl;
+using Tao.DevIl;
 
 namespace GameLoop {
     public partial class Form1 : Form {
         FastLoop _fastLoop;
         bool _fullScreen = false;
         StateSystem _system = new StateSystem();
+        TextureManager _textureManager = new TextureManager();
+
         public Form1() {
-            //state
-            _system.AddState( "splash", new SplashScreenState( _system ) );
-            _system.AddState( "title_menu", new TitleMenuState( _system ) );
-            _system.AddState( "sprite_test", new DrawSpriteState() );
-
-            _system.ChangeState( "sprite_test" );
-
             InitializeComponent();
             _openGlControl.InitializeContexts();
+
+            //Init DevIl
+            Il.ilInit();
+            Ilu.iluInit();
+            Ilut.ilutInit();
+            Ilut.ilutRenderer( Ilut.ILUT_OPENGL );
+
+            //Load textures
+            _textureManager.LoadTexture( "1", "Image/1.tif" );
+            _textureManager.LoadTexture( "face", "Image/face.tif" );
+            _textureManager.LoadTexture( "face_alpha", "Image/face_alpha.tif" );
+
+            //states
+            _system.AddState( "splash", new SplashScreenState( _system ) );
+            _system.AddState( "title_menu", new TitleMenuState( _system ) );
+            _system.AddState( "sprite_test", new DrawSpriteState( _textureManager ) );
+            _system.AddState( "TestRender", new TestSpriteClassState( _textureManager ) );
+            _system.AddState( "WaveformGraphState", new WaveformGraphState( ) );
+
+            _system.ChangeState( "TestRender" );
+
             if ( _fullScreen ) {
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;

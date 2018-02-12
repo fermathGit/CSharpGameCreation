@@ -19,10 +19,15 @@ D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.Platform.Windows.dll
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.OpenGl.xml
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.Platform.Windows.xml
-D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.Form1.resources
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.Properties.Resources.resources
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.csproj.GenerateResource.Cache
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.csproj.CoreCompileInputs.cache
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.exe
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.pdb
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.DevIl.dll
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Tao.DevIl.xml
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\GameLoop.csprojResolveAssemblyReference.cache
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\1.tif
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\face.tif
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\face_alpha.tif
