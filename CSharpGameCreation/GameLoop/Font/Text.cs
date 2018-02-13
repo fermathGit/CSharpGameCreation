@@ -51,7 +51,7 @@ namespace GameLoop {
                     float xOffset = (float)sprite.Data.XOffset / 2;
                     float yOffset = (float)sprite.Data.YOffset + (float)sprite.Data.Height / 2;
 
-                    sprite.Sprite.SetPosition( x + curX + xOffset, y - curY - yOffset );
+                    sprite.Sprite.SetPosition( x + curX + xOffset, y + curY - yOffset );
                     curX += sprite.Data.XAdvance;
                     _bitmapText.Add( sprite );
                 }

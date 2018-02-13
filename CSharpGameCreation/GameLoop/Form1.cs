@@ -40,9 +40,10 @@ namespace GameLoop {
             _system.AddState( "TestRender", new TestSpriteClassState( _textureManager ) );
             _system.AddState( "WaveformGraphState", new WaveformGraphState( ) );
             _system.AddState( "TextTest", new TextTestState( _textureManager ) ); 
-            _system.AddState( "TextRender", new TextRenderState( _textureManager ) ); 
+            _system.AddState( "TextRender", new TextRenderState( _textureManager ) );
+            _system.AddState( "SpecialEffect", new SpecialEffectState( _textureManager ) );
 
-            _system.ChangeState( "TextRender" );
+            _system.ChangeState( "SpecialEffect" );
 
             if ( _fullScreen ) {
                 FormBorderStyle = FormBorderStyle.None;

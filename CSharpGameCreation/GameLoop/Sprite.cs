@@ -68,6 +68,10 @@ namespace GameLoop {
             return _vertexPositions[1].X - _vertexPositions[0].X;
         }
 
+        public Vector GetPosition() {
+            return GetCenter();
+        }
+
         public void SetHeight( float height ) {
             InitVertexPositions( GetCenter(), GetWidth(), height );
         }
@@ -80,7 +84,7 @@ namespace GameLoop {
             SetPosition( new Vector( x, y, 0 ) );
         }
 
-        private void SetPosition( Vector position ) {
+        public void SetPosition( Vector position ) {
             InitVertexPositions( position, GetWidth(), GetHeight() );
         }
 
