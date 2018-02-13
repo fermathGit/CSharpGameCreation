@@ -42,8 +42,9 @@ namespace GameLoop {
             _system.AddState( "TextTest", new TextTestState( _textureManager ) ); 
             _system.AddState( "TextRender", new TextRenderState( _textureManager ) );
             _system.AddState( "SpecialEffect", new SpecialEffectState( _textureManager ) );
+            _system.AddState( "Circle", new CircleIntersectionState() );
 
-            _system.ChangeState( "SpecialEffect" );
+            _system.ChangeState( "Circle" );
 
             if ( _fullScreen ) {
                 FormBorderStyle = FormBorderStyle.None;
