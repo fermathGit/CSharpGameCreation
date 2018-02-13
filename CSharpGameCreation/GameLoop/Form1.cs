@@ -31,6 +31,7 @@ namespace GameLoop {
             _textureManager.LoadTexture( "1", "Image/1.tif" );
             _textureManager.LoadTexture( "face", "Image/face.tif" );
             _textureManager.LoadTexture( "face_alpha", "Image/face_alpha.tif" );
+            _textureManager.LoadTexture( "font", "Image/font.tga" );
 
             //states
             _system.AddState( "splash", new SplashScreenState( _system ) );
@@ -38,8 +39,10 @@ namespace GameLoop {
             _system.AddState( "sprite_test", new DrawSpriteState( _textureManager ) );
             _system.AddState( "TestRender", new TestSpriteClassState( _textureManager ) );
             _system.AddState( "WaveformGraphState", new WaveformGraphState( ) );
+            _system.AddState( "TextTest", new TextTestState( _textureManager ) ); 
+            _system.AddState( "TextRender", new TextRenderState( _textureManager ) ); 
 
-            _system.ChangeState( "TestRender" );
+            _system.ChangeState( "TextRender" );
 
             if ( _fullScreen ) {
                 FormBorderStyle = FormBorderStyle.None;

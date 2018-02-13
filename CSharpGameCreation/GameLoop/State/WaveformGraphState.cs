@@ -62,7 +62,11 @@ namespace GameLoop {
 
         public void Render() {
             DrawAxis();
-
+            //DrawGraph( Math.Sin, new Color( 1, 0, 0, 1 ) );
+            //DrawGraph( Math.Cos, new Color( 0, 0.5f, 0.5f, 1 ) );
+            DrawGraph( delegate ( double value ) {
+                return ( Math.Sin( value ) + Math.Cos( value + value ) ) * 0.5;
+            }, new Color( 0.5f, 0.5f, 1, 1 ) );
         }
 
         public void Update( double elapsedTime ) {

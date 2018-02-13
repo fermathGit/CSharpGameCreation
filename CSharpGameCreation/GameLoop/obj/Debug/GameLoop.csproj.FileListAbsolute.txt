@@ -31,3 +31,5 @@ D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\obj\Debug\Game
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\1.tif
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\face.tif
 D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\face_alpha.tif
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\font.tga
+D:\Git\GayPlatform\CSharpGameCreation\CSharpGameCreation\GameLoop\bin\Debug\Image\font.fnt

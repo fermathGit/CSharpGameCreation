@@ -32,5 +32,11 @@ namespace GameLoop {
             }
             Gl.glEnd();
         }
+
+        public void DrawText( Text text ) {
+            for ( int i = 0, imax = text.CharacterSprites.Count; i < imax; ++i ) {
+                DrawSprite( text.CharacterSprites[i].Sprite );
+            }
+        }
     }
 }

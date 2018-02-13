@@ -58,12 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FastLoop.cs" />
+    <Compile Include="Font\CharacterData.cs" />
+    <Compile Include="Font\CharacterSprite.cs" />
+    <Compile Include="Font\Font.cs" />
+    <Compile Include="Font\FontParser.cs" />
+    <Compile Include="Font\Text.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FramesPerSecond.cs" />
     <Compile Include="IGameObject.cs" />
     <Compile Include="PreciseTimer.cs" />
     <Compile Include="Program.cs" />
@@ -72,8 +78,11 @@
     <Compile Include="Sprite.cs" />
     <Compile Include="StateSystem.cs" />
     <Compile Include="State\DrawSpriteState.cs" />
+    <Compile Include="State\SpecialEffectState.cs" />
     <Compile Include="State\SplashScreenState.cs" />
     <Compile Include="State\TestSpriteClassState.cs" />
+    <Compile Include="State\TextRenderState.cs" />
+    <Compile Include="State\TextTestState.cs" />
     <Compile Include="State\TitleMenuState.cs" />
     <Compile Include="State\WaveformGraphState.cs" />
     <Compile Include="Struct.cs" />
@@ -90,6 +99,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Image\font.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Image\font.tga">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
