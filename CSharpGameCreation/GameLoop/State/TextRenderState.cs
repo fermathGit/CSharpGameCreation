@@ -19,11 +19,12 @@ namespace GameLoop {
         public void Render() {
             Gl.glClearColor( 0, 0, 0, 1 );
             Gl.glClear( Gl.GL_COLOR_BUFFER_BIT );
-            _text = new Text( "Fermath" + " FPS:" + _fps.CurrentFPS.ToString( "00.0000000" ), _font, 200 );
+            _text = new Text( "Fermath" + " FPS:" + _fps.CurrentFPS.ToString( "00.0" ), _font, 200 );
             _renderer.DrawText( _text );
-            //for ( int i = 0; i < 1000; ++i ) {
-            //    _renderer.DrawText( _text );
-            //}
+            for ( int i = 0; i < 1000; ++i ) {
+                _renderer.DrawText( _text );
+            }
+            _renderer.Render();
         }
 
         public void Update( double elapsedTime ) {
